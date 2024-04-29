@@ -64,7 +64,27 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
             First import clsx from 'clsx'
             Use clsx :  <div className={clsx('tailwindcss class',
             {'bg-blue-100 text-white': pathname === link.href},
-            )}></div>
+            )}></div> 
+
+
+                                <!--SECTION 07 DATA FETCHING  -->
+        Fetching Data: 
+                We can use APIs,ORM like prisma or direct SQL 
+
+                API USE: When a third party API is involved
+                         When we are fetching the client data like in Forms and we want to save our save database secrets. 
+                         In Nextjs RoutesHandelers are used to create API end points. 
+
+                Database Query: 
+                        We use interact with database with SQL or use ORM like Prisma to interact with database.
+                        In Nextjs, Server Components are used to direct query to database without exposing the database secterts to client.API layer is skiped in that case.  
+                React Server Components:
+                        We use server components due to, server comoonents support Promises. its mean that we can use async/await to fetch data. No need for data fetching library or useState or useEffect hooks.
+                        Data fetches occur at server side so only results are sent to client.
+                        Similary,server components execute at server side so no need of API layer to make bridge between database and code.
+
+
+                       
    
 
                     
